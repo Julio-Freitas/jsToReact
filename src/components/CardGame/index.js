@@ -1,8 +1,20 @@
 import "./style.css";
-const CardGame = (number) => {
+const _handleClickFront = (event) => {
+  console.log(event);
+};
+const CardGame = () => {
   return `
     <article class="card-game">
-        <img src="../images/alura-pixel.png" atl="alura" title="img alura" />
+    <div class="card-fliper">
+      <div class="card-front">
+       <img src="../images/alura-pixel.png" atl="alura" title="img alura" />
+      </div >
+       <div class="card-back">
+         COSTAS
+      </div>
+
+    </div>
+       
     </article>
   `;
 };
