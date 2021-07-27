@@ -7,6 +7,6 @@ import "./src/styles/elements/base.css";
 
 const app = document.querySelector("#app");
 
-const $htmlCardGame = CardGame(1);
+const $htmlCardGame = CardGame();
 
 app.insertAdjacentHTML("beforeend", $htmlCardGame);
