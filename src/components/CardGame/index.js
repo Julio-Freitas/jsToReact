@@ -1,20 +1,9 @@
 import "./style.css";
-const _handleClickFront = (event) => {
-  console.log(event);
-};
-const CardGame = () => {
-  return `
-    <article class="card-game">
-    <div class="card-fliper">
-      <div class="card-front">
-       <img src="../images/alura-pixel.png" atl="alura" title="img alura" />
-      </div >
-       <div class="card-back">
-         COSTAS
-      </div>
 
-    </div>
-       
+const CardGame = (icon = "alura-pixel", alt = "alura") => {
+  return /* html */ `
+    <article class="card-game">
+     <img src="../images/${icon}.png" atl=${alt} title="img ${alt}" />
     </article>
   `;
 };
